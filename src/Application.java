@@ -1,25 +1,30 @@
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Application {
 
-    // application status :  to send, sent, interviewing,  archived
+    enum Status {
+        applied,
+        toApply,
+        interviewing,
+        archived
+    }
 
-    // favorite: boolean
+    boolean favorite;
+    String jobTitle;
 
-    // job title: string
+    String jobDescription;
 
-    // job description --> string
+    ArrayList<String> jobRequirements;
 
-    // job requirements --> arrayList
+    WorkRegime workRegime;
+    int[] salaryRange = new int[2];
 
-    // company perks --> arrayList
+    String resumeVersionSent; //filename
 
-    // work regime = remote, local, hybrid
+    String coverLetter;
 
-    // salary --> double
+    Date dateApplied;
 
-    // cv version sent --> filename (string)
-
-    // cover_letter = string
-
-
-
+    Company company;
 }
