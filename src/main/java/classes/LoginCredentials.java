@@ -1,4 +1,4 @@
-package myPackage;
+package classes;
 
 public class LoginCredentials {
     int userId;
