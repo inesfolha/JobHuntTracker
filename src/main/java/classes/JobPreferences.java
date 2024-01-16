@@ -1,3 +1,5 @@
+package myPackage;
+
 public class JobPreferences {
     WorkRegime workRegime;
 

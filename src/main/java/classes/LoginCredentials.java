@@ -1,3 +1,5 @@
+package myPackage;
+
 public class LoginCredentials {
     int userId;
     String userLoginEmail;

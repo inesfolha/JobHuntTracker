@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package myPackage;
 
 public class User {
     int userId;
