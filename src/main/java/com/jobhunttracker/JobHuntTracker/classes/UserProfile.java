@@ -1,9 +1,8 @@
-package classes;
+package com.jobhunttracker.JobHuntTracker.classes;
 
 import java.util.ArrayList;
 
 public class UserProfile {
-
     String name;
     int age;
     String location;

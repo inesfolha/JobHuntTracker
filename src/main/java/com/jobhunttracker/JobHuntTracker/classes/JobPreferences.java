@@ -1,4 +1,4 @@
-package classes;
+package com.jobhunttracker.JobHuntTracker.classes;
 
 public class JobPreferences {
     WorkRegime workRegime;

@@ -1,4 +1,4 @@
-package classes;
+package com.jobhunttracker.JobHuntTracker.classes;
 
 import java.util.ArrayList;
 
