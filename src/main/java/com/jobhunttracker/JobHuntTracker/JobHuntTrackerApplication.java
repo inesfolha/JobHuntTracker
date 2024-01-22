@@ -10,9 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.core.env.ConfigurableEnvironment;
-
-import static com.fasterxml.jackson.databind.type.LogicalType.Collection;
-
+import java.util.Collection;
 @SpringBootApplication
 public class JobHuntTrackerApplication {
 
@@ -44,5 +42,6 @@ public class JobHuntTrackerApplication {
 
 		System.out.println("*********************************************************************");
 	}
+
 
 }
