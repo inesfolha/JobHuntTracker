@@ -1,5 +1,8 @@
-package com.jobhunttracker.JobHuntTracker.classes;
+package com.jobhunttracker.JobHuntTracker.entity;
 
+import lombok.Data;
+
+@Data
 public class JobPreferences {
     WorkRegime workRegime;
 

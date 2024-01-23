@@ -1,13 +1,13 @@
-package com.jobhunttracker.JobHuntTracker.classes;
-import java.time.LocalDateTime;
-
+package com.jobhunttracker.JobHuntTracker.entity;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-@Data @Document
+import java.time.LocalDateTime;
+
+@Data @Document(collection = "Users")
 public class User {
     @Id
     private String id;
@@ -22,7 +22,7 @@ public class User {
         String hashedPassword = hashPassword(password);
 
         // Create LoginCredentials Object with the info
-        this.loginCredentials = new LoginCredentials(username, email, hashedPassword);
+        this.loginCredentials = new LoginCredentials(email, hashedPassword, username);
 
         this.userProfile = new UserProfile(); // Initialize as empty
         this.userApplications = new ApplicationS(); // Initialize as empty

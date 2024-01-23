@@ -1,32 +1,20 @@
 package com.jobhunttracker.JobHuntTracker;
 
-import com.jobhunttracker.JobHuntTracker.classes.User;
-import com.jobhunttracker.JobHuntTracker.classes.UserRepository;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.env.OriginTrackedMapPropertySource;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.context.event.EventListener;
-import org.springframework.core.env.ConfigurableEnvironment;
-import java.util.Collection;
-@SpringBootApplication
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+@SpringBootApplication @EnableMongoRepositories("com.jobhunttracker.JobHuntTracker.repository")
 public class JobHuntTrackerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JobHuntTrackerApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner runner(UserRepository repository){
-		return args -> {
-			User user = new User("username", "example@email.com", "password");
 
-			repository.insert(user);
-		};
-	}
-	@EventListener
+
+
+
+	/* @EventListener
 	public void printProperties(ContextRefreshedEvent contextRefreshedEvent) {
 		System.out.println("************************* ACTIVE PROPERTIES *************************");
 
@@ -41,7 +29,7 @@ public class JobHuntTrackerApplication {
 				.forEach(property -> System.out.println(property.getKey() + "=" + property.getValue()));
 
 		System.out.println("*********************************************************************");
-	}
+	}*/
 
 
 }

@@ -1,7 +1,9 @@
-package com.jobhunttracker.JobHuntTracker.classes;
+package com.jobhunttracker.JobHuntTracker.entity;
+
+import lombok.Data;
 
 import java.util.ArrayList;
-
+@Data
 public class UserProfile {
     String name;
     int age;
