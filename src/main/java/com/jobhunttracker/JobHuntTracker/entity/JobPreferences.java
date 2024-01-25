@@ -1,5 +1,6 @@
 package com.jobhunttracker.JobHuntTracker.entity;
 
+import com.jobhunttracker.JobHuntTracker.entity.enums.WorkRegime;
 import lombok.Data;
 
 @Data

@@ -23,7 +23,6 @@ public class User {
 
         // Create LoginCredentials Object with the info
         this.loginCredentials = new LoginCredentials(email, hashedPassword, username);
-
         this.userProfile = new UserProfile(); // Initialize as empty
         this.userApplications = new ApplicationS(); // Initialize as empty
         this.created = LocalDateTime.now();

@@ -1,4 +1,4 @@
-package com.jobhunttracker.JobHuntTracker.entity;
+package com.jobhunttracker.JobHuntTracker.entity.enums;
 
 public enum WorkRegime {
     InOffice,
