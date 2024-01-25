@@ -1,0 +1,531 @@
+25-01-2024 -- 16:24:48.760 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 20488 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+25-01-2024 -- 16:24:48.762 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+25-01-2024 -- 16:24:48.889 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m 
+25-01-2024 -- 16:24:48.890 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m 
+25-01-2024 -- 16:24:49.783 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+25-01-2024 -- 16:24:49.874 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 81 ms. Found 1 MongoDB repository interface.[0;39m 
+25-01-2024 -- 16:24:51.277 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+25-01-2024 -- 16:24:51.300 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+25-01-2024 -- 16:24:51.300 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+25-01-2024 -- 16:24:51.387 [restartedMain] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+25-01-2024 -- 16:24:51.388 [restartedMain] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2494 ms[0;39m 
+25-01-2024 -- 16:24:51.763 [restartedMain] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5dc6cfe8, com.mongodb.Jep395RecordCodecProvider@33713462, com.mongodb.KotlinCodecProvider@12c7c19f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+25-01-2024 -- 16:24:52.066 [restartedMain] [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer - [34mLiveReload server is running on port 35729[0;39m 
+25-01-2024 -- 16:24:52.233 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.234 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.235 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.236 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.250 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.252 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.253 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.254 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:24:52.345 [restartedMain] [34mINFO [0;39m o.m.d.cluster - [34mNo server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out[0;39m 
+25-01-2024 -- 16:25:01.784 [cluster-ClusterId{value='65b28b53a321fa115b6a43fa', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mException in monitor thread while connecting to server localhost:27017[0;39m 
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:728)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:606)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:451)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:372)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:102)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:49)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:213)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:196)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:156)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:175)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:200)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:739)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:603)
+	... 10 common frames omitted
+25-01-2024 -- 16:26:41.922 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 20356 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+25-01-2024 -- 16:26:41.925 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+25-01-2024 -- 16:26:42.056 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m 
+25-01-2024 -- 16:26:42.056 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m 
+25-01-2024 -- 16:26:42.953 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+25-01-2024 -- 16:26:43.049 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 88 ms. Found 1 MongoDB repository interface.[0;39m 
+25-01-2024 -- 16:26:44.339 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+25-01-2024 -- 16:26:44.367 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+25-01-2024 -- 16:26:44.368 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+25-01-2024 -- 16:26:44.463 [restartedMain] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+25-01-2024 -- 16:26:44.464 [restartedMain] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2407 ms[0;39m 
+25-01-2024 -- 16:26:44.856 [restartedMain] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6151f11b, com.mongodb.Jep395RecordCodecProvider@2770dcf7, com.mongodb.KotlinCodecProvider@21bb04e2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+25-01-2024 -- 16:26:45.179 [restartedMain] [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer - [34mLiveReload server is running on port 35729[0;39m 
+25-01-2024 -- 16:26:45.372 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.373 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.374 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.375 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.394 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.396 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.398 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.400 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:26:45.492 [restartedMain] [34mINFO [0;39m o.m.d.cluster - [34mNo server chosen by WritableServerSelector from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out[0;39m 
+25-01-2024 -- 16:26:54.874 [cluster-ClusterId{value='65b28bc4bb45f136c46eff37', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mException in monitor thread while connecting to server localhost:27017[0;39m 
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:728)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:606)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:451)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:372)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:102)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:49)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:213)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:196)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:156)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:175)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:200)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:739)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:603)
+	... 10 common frames omitted
+25-01-2024 -- 16:27:15.496 [restartedMain] [31mWARN [0;39m o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [31mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'[0;39m 
+25-01-2024 -- 16:27:15.506 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStopping service [Tomcat][0;39m 
+25-01-2024 -- 16:27:15.579 [restartedMain] [34mINFO [0;39m o.s.b.a.l.ConditionEvaluationReportLogger - [34m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[0;39m 
+25-01-2024 -- 16:27:15.657 [restartedMain] [1;31mERROR[0;39m o.s.b.SpringApplication - [1;31mApplication run failed[0;39m 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:960)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1684)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:643)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 50 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 60 common frames omitted
+Caused by: org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:88)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2993)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:603)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:215)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.ensureIndex(DefaultIndexOperations.java:119)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.createIndex(MongoPersistentEntityIndexCreator.java:153)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForAndCreateIndexes(MongoPersistentEntityIndexCreator.java:143)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForIndexes(MongoPersistentEntityIndexCreator.java:127)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:96)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:73)
+	at org.springframework.data.mongodb.core.MongoTemplate.<init>(MongoTemplate.java:263)
+	at org.springframework.boot.autoconfigure.data.mongo.MongoDatabaseFactoryDependentConfiguration.mongoTemplate(MongoDatabaseFactoryDependentConfiguration.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 61 common frames omitted
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at com.mongodb.internal.connection.BaseCluster.createTimeoutException(BaseCluster.java:380)
+	at com.mongodb.internal.connection.BaseCluster.selectServer(BaseCluster.java:125)
+	at com.mongodb.internal.connection.SingleServerCluster.selectServer(SingleServerCluster.java:46)
+	at com.mongodb.internal.binding.ClusterBinding.getWriteConnectionSource(ClusterBinding.java:134)
+	at com.mongodb.client.internal.ClientSessionBinding.getConnectionSource(ClientSessionBinding.java:128)
+	at com.mongodb.client.internal.ClientSessionBinding.getWriteConnectionSource(ClientSessionBinding.java:102)
+	at com.mongodb.internal.operation.SyncOperationHelper.withConnection(SyncOperationHelper.java:106)
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:129)
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:68)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:173)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:913)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:896)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:891)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:876)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.lambda$ensureIndex$0(DefaultIndexOperations.java:129)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:601)
+	... 73 common frames omitted
+25-01-2024 -- 16:27:15.667 [restartedMain] [1;31mERROR[0;39m c.j.J.JobHuntTrackerApplication - [1;31mError occurred during application startup:[0;39m 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:960)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository': Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.jobhunttracker.JobHuntTracker.repository.UserRepository defined in @EnableMongoRepositories declared on JobHuntTrackerApplication: Cannot resolve reference to bean 'mongoTemplate' while setting bean property 'mongoOperations'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1684)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1433)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDatabaseFactoryDependentConfiguration.class]: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:643)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 50 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 60 common frames omitted
+Caused by: org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:88)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2993)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:603)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:215)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.ensureIndex(DefaultIndexOperations.java:119)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.createIndex(MongoPersistentEntityIndexCreator.java:153)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForAndCreateIndexes(MongoPersistentEntityIndexCreator.java:143)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForIndexes(MongoPersistentEntityIndexCreator.java:127)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:96)
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:73)
+	at org.springframework.data.mongodb.core.MongoTemplate.<init>(MongoTemplate.java:263)
+	at org.springframework.boot.autoconfigure.data.mongo.MongoDatabaseFactoryDependentConfiguration.mongoTemplate(MongoDatabaseFactoryDependentConfiguration.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 61 common frames omitted
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message}, caused by {java.net.SocketTimeoutException: Read timed out}}]
+	at com.mongodb.internal.connection.BaseCluster.createTimeoutException(BaseCluster.java:380)
+	at com.mongodb.internal.connection.BaseCluster.selectServer(BaseCluster.java:125)
+	at com.mongodb.internal.connection.SingleServerCluster.selectServer(SingleServerCluster.java:46)
+	at com.mongodb.internal.binding.ClusterBinding.getWriteConnectionSource(ClusterBinding.java:134)
+	at com.mongodb.client.internal.ClientSessionBinding.getConnectionSource(ClientSessionBinding.java:128)
+	at com.mongodb.client.internal.ClientSessionBinding.getWriteConnectionSource(ClientSessionBinding.java:102)
+	at com.mongodb.internal.operation.SyncOperationHelper.withConnection(SyncOperationHelper.java:106)
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:129)
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:68)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:173)
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:913)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:896)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:891)
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:876)
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.lambda$ensureIndex$0(DefaultIndexOperations.java:129)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:601)
+	... 73 common frames omitted
+25-01-2024 -- 16:27:15.677 [main] [1;31mERROR[0;39m c.j.J.JobHuntTrackerApplication - [1;31mError occurred during application startup:[0;39m 
+org.springframework.boot.devtools.restart.SilentExitExceptionHandler$SilentExitException: null
+	at org.springframework.boot.devtools.restart.SilentExitExceptionHandler.exitCurrentThread(SilentExitExceptionHandler.java:92)
+	at org.springframework.boot.devtools.restart.Restarter.immediateRestart(Restarter.java:179)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:163)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:532)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationStartingEvent(RestartApplicationListener.java:98)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationEvent(RestartApplicationListener.java:51)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:149)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$starting$0(SpringApplicationRunListeners.java:54)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)
+25-01-2024 -- 16:36:57.732 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 18472 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+25-01-2024 -- 16:36:57.736 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+25-01-2024 -- 16:36:57.864 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m 
+25-01-2024 -- 16:36:57.865 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m 
+25-01-2024 -- 16:36:58.957 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+25-01-2024 -- 16:36:59.065 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 96 ms. Found 1 MongoDB repository interface.[0;39m 
+25-01-2024 -- 16:37:00.496 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+25-01-2024 -- 16:37:00.522 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+25-01-2024 -- 16:37:00.523 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+25-01-2024 -- 16:37:00.595 [restartedMain] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+25-01-2024 -- 16:37:00.595 [restartedMain] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2729 ms[0;39m 
+25-01-2024 -- 16:37:01.018 [restartedMain] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6fa44da, com.mongodb.Jep395RecordCodecProvider@43e54e6, com.mongodb.KotlinCodecProvider@43309309]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+25-01-2024 -- 16:37:01.075 [cluster-ClusterId{value='65b28e2c4cfb8f5563321a61', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=62352000}[0;39m 
+25-01-2024 -- 16:37:01.356 [restartedMain] [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer - [34mLiveReload server is running on port 35729[0;39m 
+25-01-2024 -- 16:37:01.602 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.603 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.604 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.605 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.623 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.624 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.627 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:01.627 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:37:02.789 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+25-01-2024 -- 16:37:02.805 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.858 seconds (process running for 6.835)[0;39m 
+25-01-2024 -- 16:37:02.812 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+25-01-2024 -- 16:37:02.815 [main] [1;31mERROR[0;39m c.j.J.JobHuntTrackerApplication - [1;31mError occurred during application startup:[0;39m 
+org.springframework.boot.devtools.restart.SilentExitExceptionHandler$SilentExitException: null
+	at org.springframework.boot.devtools.restart.SilentExitExceptionHandler.exitCurrentThread(SilentExitExceptionHandler.java:92)
+	at org.springframework.boot.devtools.restart.Restarter.immediateRestart(Restarter.java:179)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:163)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:532)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationStartingEvent(RestartApplicationListener.java:98)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationEvent(RestartApplicationListener.java:51)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:149)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$starting$0(SpringApplicationRunListeners.java:54)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)
+25-01-2024 -- 16:38:27.038 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 17168 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+25-01-2024 -- 16:38:27.041 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+25-01-2024 -- 16:38:27.203 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m 
+25-01-2024 -- 16:38:27.204 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m 
+25-01-2024 -- 16:38:28.279 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+25-01-2024 -- 16:38:28.367 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 80 ms. Found 1 MongoDB repository interface.[0;39m 
+25-01-2024 -- 16:38:29.904 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+25-01-2024 -- 16:38:29.930 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+25-01-2024 -- 16:38:29.930 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+25-01-2024 -- 16:38:30.010 [restartedMain] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+25-01-2024 -- 16:38:30.011 [restartedMain] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2804 ms[0;39m 
+25-01-2024 -- 16:38:30.404 [restartedMain] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@148eb1e2, com.mongodb.Jep395RecordCodecProvider@234414d1, com.mongodb.KotlinCodecProvider@25516e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+25-01-2024 -- 16:38:30.442 [cluster-ClusterId{value='65b28e86d0f2bb7a7adaf1cb', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44302400}[0;39m 
+25-01-2024 -- 16:38:30.738 [restartedMain] [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer - [34mLiveReload server is running on port 35729[0;39m 
+25-01-2024 -- 16:38:30.922 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.923 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.923 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.925 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.941 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.943 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.945 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:30.947 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:38:32.167 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+25-01-2024 -- 16:38:32.183 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.911 seconds (process running for 6.967)[0;39m 
+25-01-2024 -- 16:38:32.192 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+25-01-2024 -- 16:38:32.195 [main] [1;31mERROR[0;39m c.j.J.JobHuntTrackerApplication - [1;31mError occurred during application startup:[0;39m 
+org.springframework.boot.devtools.restart.SilentExitExceptionHandler$SilentExitException: null
+	at org.springframework.boot.devtools.restart.SilentExitExceptionHandler.exitCurrentThread(SilentExitExceptionHandler.java:92)
+	at org.springframework.boot.devtools.restart.Restarter.immediateRestart(Restarter.java:179)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:163)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:532)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationStartingEvent(RestartApplicationListener.java:98)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationEvent(RestartApplicationListener.java:51)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:149)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$starting$0(SpringApplicationRunListeners.java:54)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)
+25-01-2024 -- 16:39:42.025 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 20164 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+25-01-2024 -- 16:39:42.028 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+25-01-2024 -- 16:39:42.167 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m 
+25-01-2024 -- 16:39:42.168 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m 
+25-01-2024 -- 16:39:43.288 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+25-01-2024 -- 16:39:43.383 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 86 ms. Found 1 MongoDB repository interface.[0;39m 
+25-01-2024 -- 16:39:44.851 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+25-01-2024 -- 16:39:44.881 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+25-01-2024 -- 16:39:44.881 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+25-01-2024 -- 16:39:44.975 [restartedMain] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+25-01-2024 -- 16:39:44.975 [restartedMain] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2806 ms[0;39m 
+25-01-2024 -- 16:39:45.380 [restartedMain] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@768f5503, com.mongodb.Jep395RecordCodecProvider@521fe711, com.mongodb.KotlinCodecProvider@542bde4d]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+25-01-2024 -- 16:39:45.419 [cluster-ClusterId{value='65b28ed1143ed839d1fc1527', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42928200}[0;39m 
+25-01-2024 -- 16:39:45.733 [restartedMain] [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer - [34mLiveReload server is running on port 35729[0;39m 
+25-01-2024 -- 16:39:45.932 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.933 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.935 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.936 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.957 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.959 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.960 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:45.962 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:39:47.027 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+25-01-2024 -- 16:39:47.041 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.78 seconds (process running for 6.77)[0;39m 
+25-01-2024 -- 16:39:47.047 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+25-01-2024 -- 16:39:47.051 [main] [1;31mERROR[0;39m c.j.J.JobHuntTrackerApplication - [1;31mError occurred during application startup:[0;39m 
+org.springframework.boot.devtools.restart.SilentExitExceptionHandler$SilentExitException: null
+	at org.springframework.boot.devtools.restart.SilentExitExceptionHandler.exitCurrentThread(SilentExitExceptionHandler.java:92)
+	at org.springframework.boot.devtools.restart.Restarter.immediateRestart(Restarter.java:179)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:163)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:532)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationStartingEvent(RestartApplicationListener.java:98)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationEvent(RestartApplicationListener.java:51)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:149)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$starting$0(SpringApplicationRunListeners.java:54)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)
+25-01-2024 -- 16:40:21.764 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 20084 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+25-01-2024 -- 16:40:21.767 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+25-01-2024 -- 16:40:21.906 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m 
+25-01-2024 -- 16:40:21.906 [restartedMain] [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [34mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m 
+25-01-2024 -- 16:40:22.956 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+25-01-2024 -- 16:40:23.046 [restartedMain] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 80 ms. Found 1 MongoDB repository interface.[0;39m 
+25-01-2024 -- 16:40:24.655 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+25-01-2024 -- 16:40:24.687 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+25-01-2024 -- 16:40:24.687 [restartedMain] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+25-01-2024 -- 16:40:24.809 [restartedMain] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+25-01-2024 -- 16:40:24.809 [restartedMain] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2901 ms[0;39m 
+25-01-2024 -- 16:40:25.341 [restartedMain] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@738b5c62, com.mongodb.Jep395RecordCodecProvider@540a3ea6, com.mongodb.KotlinCodecProvider@2455c743]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+25-01-2024 -- 16:40:25.378 [cluster-ClusterId{value='65b28ef92fce1274e598c6ee', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=54804700}[0;39m 
+25-01-2024 -- 16:40:25.768 [restartedMain] [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer - [34mLiveReload server is running on port 35729[0;39m 
+25-01-2024 -- 16:40:26.009 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.009 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.010 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.012 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'name' in type 'Company' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.031 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.033 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.034 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:26.035 [restartedMain] [34mINFO [0;39m o.s.d.m.c.i.MongoPersistentEntityIndexResolver - [34mFound cycle for field 'company' in type 'Application' for path 'company -> applicationsSubmitted -> company'[0;39m 
+25-01-2024 -- 16:40:27.202 [restartedMain] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+25-01-2024 -- 16:40:27.217 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 6.236 seconds (process running for 7.23)[0;39m 
+25-01-2024 -- 16:40:27.225 [restartedMain] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+25-01-2024 -- 16:40:27.227 [main] [1;31mERROR[0;39m c.j.J.JobHuntTrackerApplication - [1;31mError occurred during application startup:[0;39m 
+org.springframework.boot.devtools.restart.SilentExitExceptionHandler$SilentExitException: null
+	at org.springframework.boot.devtools.restart.SilentExitExceptionHandler.exitCurrentThread(SilentExitExceptionHandler.java:92)
+	at org.springframework.boot.devtools.restart.Restarter.immediateRestart(Restarter.java:179)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:163)
+	at org.springframework.boot.devtools.restart.Restarter.initialize(Restarter.java:532)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationStartingEvent(RestartApplicationListener.java:98)
+	at org.springframework.boot.devtools.restart.RestartApplicationListener.onApplicationEvent(RestartApplicationListener.java:51)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:171)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:149)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$starting$0(SpringApplicationRunListeners.java:54)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347)
+	at com.jobhunttracker.JobHuntTracker.JobHuntTrackerApplication.main(JobHuntTrackerApplication.java:19)

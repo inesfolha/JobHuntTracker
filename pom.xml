@@ -68,7 +68,14 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Dependency for user authentication and security -->
+		<!-- Colorful Logging :D
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>-->
+
+
+		<!-- Dependency for user authentication and security -->
 		<!--
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
