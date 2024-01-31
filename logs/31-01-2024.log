@@ -1,0 +1,640 @@
+31-01-2024 -- 17:05:22.228 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 4484 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 17:05:22.234 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 17:05:23.548 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 17:05:23.655 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 94 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 17:05:25.262 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 17:05:25.291 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 17:05:25.291 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 17:05:25.423 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 17:05:25.423 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 3007 ms[0;39m 
+31-01-2024 -- 17:05:25.859 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@47311277, com.mongodb.Jep395RecordCodecProvider@7930ffa9, com.mongodb.KotlinCodecProvider@1e60b459]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 17:05:25.901 [cluster-ClusterId{value='65ba7dd57d73040bd6f63274', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42989300}[0;39m 
+31-01-2024 -- 17:05:27.533 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 17:05:27.550 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 6.587 seconds (process running for 8.424)[0;39m 
+31-01-2024 -- 17:05:27.555 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 17:05:43.484 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:05:43.485 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:05:43.486 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 1 ms[0;39m 
+31-01-2024 -- 17:05:43.671 [http-nio-8080-exec-1] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.mapping.MappingException: No property username found on entity class com.jobhunttracker.JobHuntTracker.entity.User to bind constructor parameter to] with root cause[0;39m 
+org.springframework.data.mapping.MappingException: No property username found on entity class com.jobhunttracker.JobHuntTracker.entity.User to bind constructor parameter to
+	at org.springframework.data.mapping.model.PersistentEntityParameterValueProvider.getParameterValue(PersistentEntityParameterValueProvider.java:68)
+	at org.springframework.data.mapping.model.SpELExpressionParameterValueProvider.getParameterValue(SpELExpressionParameterValueProvider.java:49)
+	at org.springframework.data.mapping.model.ClassGeneratingEntityInstantiator.extractInvocationArguments(ClassGeneratingEntityInstantiator.java:301)
+	at org.springframework.data.mapping.model.ClassGeneratingEntityInstantiator$EntityInstantiatorAdapter.createInstance(ClassGeneratingEntityInstantiator.java:273)
+	at org.springframework.data.mapping.model.ClassGeneratingEntityInstantiator.createInstance(ClassGeneratingEntityInstantiator.java:98)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:519)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.readDocument(MappingMongoConverter.java:487)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:423)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:419)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:119)
+	at org.springframework.data.mongodb.core.MongoTemplate$ReadDocumentCallback.doWith(MongoTemplate.java:3278)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:2874)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFindOne(MongoTemplate.java:2536)
+	at org.springframework.data.mongodb.core.MongoTemplate.findOne(MongoTemplate.java:817)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findById(SimpleMongoRepository.java:127)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.findById(Unknown Source)
+	at com.jobhunttracker.JobHuntTracker.service.UserService.getUserDetails(UserService.java:32)
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.getUserDetails(UserController.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 17:10:34.264 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 19292 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 17:10:34.267 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 17:10:35.355 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 17:10:35.495 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 127 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 17:10:37.007 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 17:10:37.031 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 17:10:37.031 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 17:10:37.132 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 17:10:37.133 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2749 ms[0;39m 
+31-01-2024 -- 17:10:37.499 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@316acbb5, com.mongodb.Jep395RecordCodecProvider@56f730b2, com.mongodb.KotlinCodecProvider@47311277]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 17:10:37.536 [cluster-ClusterId{value='65ba7f0d547ed8522cdfab4e', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40869200}[0;39m 
+31-01-2024 -- 17:10:39.019 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 17:10:39.036 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.585 seconds (process running for 6.667)[0;39m 
+31-01-2024 -- 17:10:39.042 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 17:10:43.702 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:10:43.702 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:10:43.703 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 1 ms[0;39m 
+31-01-2024 -- 17:10:43.875 [http-nio-8080-exec-1] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.mapping.MappingException: No property username found on entity class com.jobhunttracker.JobHuntTracker.entity.User to bind constructor parameter to] with root cause[0;39m 
+org.springframework.data.mapping.MappingException: No property username found on entity class com.jobhunttracker.JobHuntTracker.entity.User to bind constructor parameter to
+	at org.springframework.data.mapping.model.PersistentEntityParameterValueProvider.getParameterValue(PersistentEntityParameterValueProvider.java:68)
+	at org.springframework.data.mapping.model.SpELExpressionParameterValueProvider.getParameterValue(SpELExpressionParameterValueProvider.java:49)
+	at org.springframework.data.mapping.model.ClassGeneratingEntityInstantiator.extractInvocationArguments(ClassGeneratingEntityInstantiator.java:301)
+	at org.springframework.data.mapping.model.ClassGeneratingEntityInstantiator$EntityInstantiatorAdapter.createInstance(ClassGeneratingEntityInstantiator.java:273)
+	at org.springframework.data.mapping.model.ClassGeneratingEntityInstantiator.createInstance(ClassGeneratingEntityInstantiator.java:98)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:519)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.readDocument(MappingMongoConverter.java:487)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:423)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:419)
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.read(MappingMongoConverter.java:119)
+	at org.springframework.data.mongodb.core.MongoTemplate$ReadDocumentCallback.doWith(MongoTemplate.java:3278)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:2874)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFindOne(MongoTemplate.java:2536)
+	at org.springframework.data.mongodb.core.MongoTemplate.findOne(MongoTemplate.java:817)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findById(SimpleMongoRepository.java:127)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.findById(Unknown Source)
+	at com.jobhunttracker.JobHuntTracker.service.UserService.getUserDetails(UserService.java:34)
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.getUserDetails(UserController.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 17:23:31.380 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 10696 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 17:23:31.384 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 17:23:32.362 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 17:23:32.468 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 96 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 17:23:33.797 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 17:23:33.822 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 17:23:33.823 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 17:23:33.933 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 17:23:33.933 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2419 ms[0;39m 
+31-01-2024 -- 17:23:34.366 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@254449bb, com.mongodb.Jep395RecordCodecProvider@4e642ee1, com.mongodb.KotlinCodecProvider@29ebbdf4]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 17:23:34.401 [cluster-ClusterId{value='65ba82162ec7f57f1153798e', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40105300}[0;39m 
+31-01-2024 -- 17:23:35.735 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 17:23:35.750 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.158 seconds (process running for 5.976)[0;39m 
+31-01-2024 -- 17:23:35.759 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 17:23:42.281 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:23:42.281 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:23:42.283 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 2 ms[0;39m 
+31-01-2024 -- 17:36:17.410 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 8672 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 17:36:17.414 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 17:36:18.480 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 17:36:18.587 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 97 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 17:36:20.080 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 17:36:20.118 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 17:36:20.119 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 17:36:20.258 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 17:36:20.259 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2710 ms[0;39m 
+31-01-2024 -- 17:36:20.730 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7930ffa9, com.mongodb.Jep395RecordCodecProvider@1e60b459, com.mongodb.KotlinCodecProvider@717d7587]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 17:36:20.768 [cluster-ClusterId{value='65ba8514eabbe86705eb38da', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=46554200}[0;39m 
+31-01-2024 -- 17:36:22.473 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 17:36:22.498 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 6.013 seconds (process running for 6.876)[0;39m 
+31-01-2024 -- 17:36:22.527 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 17:37:06.423 [http-nio-8080-exec-3] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:37:06.424 [http-nio-8080-exec-3] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:37:06.428 [http-nio-8080-exec-3] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 4 ms[0;39m 
+31-01-2024 -- 17:57:37.733 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 3632 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 17:57:37.737 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 17:57:39.001 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 17:57:39.140 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 117 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 17:57:40.620 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 17:57:40.646 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 17:57:40.647 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 17:57:40.775 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 17:57:40.776 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2899 ms[0;39m 
+31-01-2024 -- 17:57:41.172 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6dc1dc69, com.mongodb.Jep395RecordCodecProvider@7e9f2c32, com.mongodb.KotlinCodecProvider@19e0dffe]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 17:57:41.204 [cluster-ClusterId{value='65ba8a152ccbd732765654b9', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=42401500}[0;39m 
+31-01-2024 -- 17:57:42.707 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 17:57:42.724 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.851 seconds (process running for 6.723)[0;39m 
+31-01-2024 -- 17:57:42.729 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 17:58:35.987 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:58:35.988 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 17:58:35.991 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 3 ms[0;39m 
+31-01-2024 -- 18:32:34.954 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 8132 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 18:32:34.958 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 18:32:36.021 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 18:32:36.153 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 118 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 18:32:37.474 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 18:32:37.500 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 18:32:37.501 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 18:32:37.622 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 18:32:37.623 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2547 ms[0;39m 
+31-01-2024 -- 18:32:38.041 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6a0f2853, com.mongodb.Jep395RecordCodecProvider@1eff3cfb, com.mongodb.KotlinCodecProvider@70c69586]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 18:32:38.080 [cluster-ClusterId{value='65ba9245d3e277751fb092c8', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44071900}[0;39m 
+31-01-2024 -- 18:32:39.409 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 18:32:39.423 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.23 seconds (process running for 6.057)[0;39m 
+31-01-2024 -- 18:32:39.430 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 18:33:19.581 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 18:33:19.582 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 18:33:19.583 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 1 ms[0;39m 
+31-01-2024 -- 18:33:19.885 [http-nio-8080-exec-1] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.jobhunttracker.JobHuntTracker.entity.LoginCredentials.getUsername()" because the return value of "com.jobhunttracker.JobHuntTracker.entity.User.getLoginCredentials()" is null] with root cause[0;39m 
+java.lang.NullPointerException: Cannot invoke "com.jobhunttracker.JobHuntTracker.entity.LoginCredentials.getUsername()" because the return value of "com.jobhunttracker.JobHuntTracker.entity.User.getLoginCredentials()" is null
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.createUser(UserController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 18:34:41.999 [http-nio-8080-exec-2] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.jobhunttracker.JobHuntTracker.entity.LoginCredentials.getUsername()" because the return value of "com.jobhunttracker.JobHuntTracker.entity.User.getLoginCredentials()" is null] with root cause[0;39m 
+java.lang.NullPointerException: Cannot invoke "com.jobhunttracker.JobHuntTracker.entity.LoginCredentials.getUsername()" because the return value of "com.jobhunttracker.JobHuntTracker.entity.User.getLoginCredentials()" is null
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.createUser(UserController.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 19:03:23.627 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 20344 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 19:03:23.630 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 19:03:24.538 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 19:03:24.645 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 99 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 19:03:26.004 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 19:03:26.027 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 19:03:26.028 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 19:03:26.148 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 19:03:26.148 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2407 ms[0;39m 
+31-01-2024 -- 19:03:26.522 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@7ce85af2, com.mongodb.Jep395RecordCodecProvider@316acbb5, com.mongodb.KotlinCodecProvider@56f730b2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 19:03:26.564 [cluster-ClusterId{value='65ba997e9e73ad3de4a13c65', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44529600}[0;39m 
+31-01-2024 -- 19:03:28.056 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 19:03:28.069 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.185 seconds (process running for 6.275)[0;39m 
+31-01-2024 -- 19:03:28.075 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 19:03:33.958 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:03:33.959 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:03:33.963 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 2 ms[0;39m 
+31-01-2024 -- 19:06:59.322 [http-nio-8080-exec-3] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Incorrect password] with root cause[0;39m 
+java.lang.RuntimeException: Incorrect password
+	at com.jobhunttracker.JobHuntTracker.service.UserService.deleteUser(UserService.java:57)
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.deleteUser(UserController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 19:11:03.403 [http-nio-8080-exec-4] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Incorrect password] with root cause[0;39m 
+java.lang.RuntimeException: Incorrect password
+	at com.jobhunttracker.JobHuntTracker.service.UserService.deleteUser(UserService.java:57)
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.deleteUser(UserController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 19:11:36.455 [http-nio-8080-exec-5] [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet] - [1;31mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Incorrect password] with root cause[0;39m 
+java.lang.RuntimeException: Incorrect password
+	at com.jobhunttracker.JobHuntTracker.service.UserService.deleteUser(UserService.java:57)
+	at com.jobhunttracker.JobHuntTracker.controllers.UserController.deleteUser(UserController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:262)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+31-01-2024 -- 19:11:45.683 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 20828 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 19:11:45.686 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 19:11:46.770 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 19:11:46.885 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 102 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 19:11:48.395 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 19:11:48.421 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 19:11:48.422 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 19:11:48.543 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 19:11:48.557 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2744 ms[0;39m 
+31-01-2024 -- 19:11:48.995 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6dc1dc69, com.mongodb.Jep395RecordCodecProvider@7e9f2c32, com.mongodb.KotlinCodecProvider@19e0dffe]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 19:11:49.035 [cluster-ClusterId{value='65ba9b7427c92a47ed879435', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=47946200}[0;39m 
+31-01-2024 -- 19:11:50.495 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 19:11:50.509 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.6 seconds (process running for 6.415)[0;39m 
+31-01-2024 -- 19:11:50.516 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 19:12:13.942 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:12:13.942 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:12:13.946 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 4 ms[0;39m 
+31-01-2024 -- 19:21:54.047 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 19320 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 19:21:54.050 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 19:21:55.048 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 19:21:55.160 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 100 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 19:21:56.654 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 19:21:56.684 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 19:21:56.684 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 19:21:56.829 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 19:21:56.830 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2654 ms[0;39m 
+31-01-2024 -- 19:21:57.230 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@2489e84a, com.mongodb.Jep395RecordCodecProvider@2a39aa2b, com.mongodb.KotlinCodecProvider@62b93086]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 19:21:57.276 [cluster-ClusterId{value='65ba9dd5c8eee96a3ac9581b', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=52474000}[0;39m 
+31-01-2024 -- 19:21:58.548 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 19:21:58.560 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.347 seconds (process running for 6.165)[0;39m 
+31-01-2024 -- 19:21:58.567 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 19:22:07.985 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:22:07.986 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:22:07.987 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 1 ms[0;39m 
+31-01-2024 -- 19:22:08.432 [http-nio-8080-exec-1] [34mINFO [0;39m c.j.J.s.UserService - [34mComparing $2a$10$CfmVsRSSCyEsDwI8.IR/HO3oKc/oiSH7EXOxG.lF2Dmc0djTtzC9u with $2a$10$r6oD6YucLpZvGA4IFER21eRin2Wh2iuXpMGa/XDHhXXJSPrK2b59C[0;39m 
+31-01-2024 -- 19:28:40.365 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 21992 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 19:28:40.369 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 19:28:41.245 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 19:28:41.330 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 74 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 19:28:42.666 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 19:28:42.688 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 19:28:42.689 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 19:28:42.801 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 19:28:42.802 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2320 ms[0;39m 
+31-01-2024 -- 19:28:43.209 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@41b13f3d, com.mongodb.Jep395RecordCodecProvider@7c0777b5, com.mongodb.KotlinCodecProvider@2489e84a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 19:28:43.248 [cluster-ClusterId{value='65ba9f6b3a4fa613e3bbb559', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=40919200}[0;39m 
+31-01-2024 -- 19:28:44.593 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 19:28:44.606 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 4.99 seconds (process running for 5.736)[0;39m 
+31-01-2024 -- 19:28:44.612 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 19:28:53.581 [http-nio-8080-exec-1] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:28:53.581 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:28:53.583 [http-nio-8080-exec-1] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 1 ms[0;39m 
+31-01-2024 -- 19:42:27.760 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarting JobHuntTrackerApplication using Java 21.0.1 with PID 15260 (C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker\target\classes started by inesf in C:\Users\inesf\OneDrive\Ambiente de Trabalho\JobHuntTracker)[0;39m 
+31-01-2024 -- 19:42:27.763 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mNo active profile set, falling back to 1 default profile: "default"[0;39m 
+31-01-2024 -- 19:42:28.721 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mBootstrapping Spring Data MongoDB repositories in DEFAULT mode.[0;39m 
+31-01-2024 -- 19:42:28.817 [main] [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate - [34mFinished Spring Data repository scanning in 83 ms. Found 1 MongoDB repository interface.[0;39m 
+31-01-2024 -- 19:42:30.123 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat initialized with port 8080 (http)[0;39m 
+31-01-2024 -- 19:42:30.154 [main] [34mINFO [0;39m o.a.c.c.StandardService - [34mStarting service [Tomcat][0;39m 
+31-01-2024 -- 19:42:30.155 [main] [34mINFO [0;39m o.a.c.c.StandardEngine - [34mStarting Servlet engine: [Apache Tomcat/10.1.17][0;39m 
+31-01-2024 -- 19:42:30.274 [main] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring embedded WebApplicationContext[0;39m 
+31-01-2024 -- 19:42:30.275 [main] [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext - [34mRoot WebApplicationContext: initialization completed in 2381 ms[0;39m 
+31-01-2024 -- 19:42:30.659 [main] [34mINFO [0;39m o.m.d.client - [34mMongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.1+12-29"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@254449bb, com.mongodb.Jep395RecordCodecProvider@4e642ee1, com.mongodb.KotlinCodecProvider@29ebbdf4]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}[0;39m 
+31-01-2024 -- 19:42:30.705 [cluster-ClusterId{value='65baa2a6d1e47c7a2bcce60d', description='null'}-localhost:27017] [34mINFO [0;39m o.m.d.cluster - [34mMonitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=48453400}[0;39m 
+31-01-2024 -- 19:42:32.078 [main] [34mINFO [0;39m o.s.b.w.e.t.TomcatWebServer - [34mTomcat started on port 8080 (http) with context path ''[0;39m 
+31-01-2024 -- 19:42:32.091 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mStarted JobHuntTrackerApplication in 5.097 seconds (process running for 5.907)[0;39m 
+31-01-2024 -- 19:42:32.097 [main] [34mINFO [0;39m c.j.J.JobHuntTrackerApplication - [34mJobHuntTrackerApplication started successfully.[0;39m 
+31-01-2024 -- 19:42:35.505 [http-nio-8080-exec-3] [34mINFO [0;39m o.a.c.c.C.[.[.[/] - [34mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:42:35.506 [http-nio-8080-exec-3] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mInitializing Servlet 'dispatcherServlet'[0;39m 
+31-01-2024 -- 19:42:35.514 [http-nio-8080-exec-3] [34mINFO [0;39m o.s.w.s.DispatcherServlet - [34mCompleted initialization in 7 ms[0;39m 

@@ -1,13 +1,14 @@
 package com.jobhunttracker.JobHuntTracker.entity;
 
+import com.jobhunttracker.JobHuntTracker.utilities.HelperMethods;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.time.LocalDateTime;
 
-@Data @Document(collection = "Users")
+@Data @Document(collection = "Users") @NoArgsConstructor
 public class User {
     @Id
     private String id;
@@ -19,7 +20,7 @@ public class User {
     public User(String username, String email, String password) {
 
         // Hash the password
-        String hashedPassword = hashPassword(password);
+        String hashedPassword = HelperMethods.hashPassword(password);
 
         // Create LoginCredentials Object with the info
         this.loginCredentials = new LoginCredentials(email, hashedPassword, username);
@@ -29,10 +30,6 @@ public class User {
     }
 
 
-    private String hashPassword(String password) {
-        // Using BCryptPasswordEncoder for password hashing
-        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        return passwordEncoder.encode(password);
-    }
+
 }
 
